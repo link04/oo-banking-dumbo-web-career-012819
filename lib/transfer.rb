@@ -18,7 +18,7 @@ class Transfer
     if sender.valid? && sender.balance >= @amount
       sender.balance -= @amount
       receiver.balance += @amount
-      
+      @status = 'complete'
     end
   end
   
