@@ -13,7 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-    if sender.valid? && sender.balance => @transfer
+    if sender.valid? && sender.balance >= @transfer
       sender.balance -= @transfer
       receiver.balance += @transfer
     end
