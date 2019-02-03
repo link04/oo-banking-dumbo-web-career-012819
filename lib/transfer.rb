@@ -15,17 +15,17 @@ class Transfer
   end
   
   def execute_transaction
-    if sender.valid? && sender.balance >= @transfer
-      sender.balance -= @transfer
-      receiver.balance += @transfer
+    if sender.valid? && sender.balance >= @amount
+      sender.balance -= @amount
+      receiver.balance += @amount
       
     end
   end
   
   def reverse_transfer
     if @status == 'complete'
-      sender.balance += @transfer
-      receiver.balance -= @transfer
+      sender.balance += @amount
+      receiver.balance -= @amount
     end
   end
 
