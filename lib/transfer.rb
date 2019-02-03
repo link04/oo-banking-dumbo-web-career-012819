@@ -18,5 +18,7 @@ class Transfer
       receiver.balance += @transfer
     end
   end
+  
+  def 
 
 end
