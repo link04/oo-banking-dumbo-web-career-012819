@@ -18,7 +18,7 @@ class BankAccount
   end
   
   def valid?
-    @status > 0 && 
+    @balance > 0 && 
   end
 
 end
