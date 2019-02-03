@@ -1,12 +1,12 @@
 class Transfer
     
-  attr_reader :name 
+  attr_reader :sender 
   attr_accessor :balance, :status
   
   def initialize(sender, receiver, amount)
-    @name = name
-    @balance = 1000
-    @status = 'open'
+    @sender = sender
+    @receiver = receiver
+    @amount = amount
   end
 
   def deposit(amount)
