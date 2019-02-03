@@ -21,7 +21,7 @@ class Transfer
       sender.balance -= @amount
       receiver.balance += @amount
       @status = 'complete'
-    elsif self.valid? == false
+    elsif self.valid? == true
       "Transaction rejected. Please check your account balance."
     end
     binding.pry
