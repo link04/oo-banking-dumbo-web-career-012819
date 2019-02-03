@@ -17,7 +17,7 @@ class Transfer
   end
   
   def valid?
-    sender.valid? && receiver.valid?
+    sender.valid? && receiver.valid? ? true : false
   end
   
   def close_account
