@@ -20,8 +20,8 @@ class Transfer
   end
   
   def reverse_transfer
-     sender.balance -= @transfer
-      receiver.balance += @transfer
+     sender.balance += @transfer
+      receiver.balance -= @transfer
   end
 
 end
