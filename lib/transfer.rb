@@ -6,6 +6,7 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @transfer = transfer
+    @status = ''
   end
 
   def valid?
