@@ -17,7 +17,6 @@ class Transfer
       sender.balance -= @transfer
       receiver.balance += @transfer
     end
-    
   end
 
 end
