@@ -13,7 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-    @status = 'closed' 
+    sender 
   end
 
 end
