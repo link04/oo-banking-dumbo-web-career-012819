@@ -1,6 +1,7 @@
 class Transfer
     
   attr_reader :sender , :receiver , :transfer
+  attr_reader :statis
   
   def initialize(sender, receiver, transfer)
     @sender = sender
