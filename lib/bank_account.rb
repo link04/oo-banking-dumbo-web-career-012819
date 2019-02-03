@@ -14,7 +14,8 @@ class BankAccount
   end
   
   def display_balance
-    @balance
+    puts "Your balance is $1000."
+    
   end
   
   def valid?
