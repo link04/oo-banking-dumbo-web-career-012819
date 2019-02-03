@@ -2,10 +2,10 @@ class Transfer
     
   attr_reader :sender , :receiver , :transfer
   
-  def initialize(sender, receiver, amount)
+  def initialize(sender, receiver, transfer)
     @sender = sender
     @receiver = receiver
-    @transfer = amount
+    @transfer = transfer
   end
 
   def deposit(amount)
