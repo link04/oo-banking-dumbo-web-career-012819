@@ -8,19 +8,11 @@ class Transfer
     @transfer = transfer
   end
 
-  def deposit(amount)
-    @balance += amount
-  end
-  
-  def display_balance
-    "Your balance is $#{@balance}."
-  end
-  
   def valid?
     sender.valid? && receiver.valid? ? true : false
   end
   
-  def close_account
+  def execute_transaction
     @status = 'closed' 
   end
 
